@@ -1,0 +1,23 @@
+CREATE TABLE `rule_condition_term` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
+  `name` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `input_type` int(11) NOT NULL COMMENT '输入框类型 InputTypeEnum(1,单选框，2多选框，3.数值，4.文本输入框)',
+  `unit` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '计量单位',
+  `unit_code` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `code` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `category` int(11) DEFAULT NULL COMMENT '类别，见CommissionRuleTermCategoryEnum(1.车辆属性，2.险企属性，3人员属性)',
+  `supported_operation` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '支持的操作类型，逗号分隔，具体见枚举值定义',
+  `operation_one` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '操作符1',
+  `operation_two` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '操作符2',
+  `operand_config_type` int(11) DEFAULT NULL COMMENT '用户配置方式 见OperandConfigTypeEnum(1,用户自定义输入,2.后端返回可选范围)',
+  `operand_input_type` int(1) DEFAULT NULL COMMENT '操作数值类型 见OperandEnum(1.String,2.Integer,3.Double)',
+  `operand_class` int(11) DEFAULT NULL COMMENT '解析operand的类',
+  `supported_operand` varchar(1024) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '支持的值',
+  `checkerType` int(11) DEFAULT NULL COMMENT '校验器类型ConditionValidatorType',
+  `rule_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '规则类型（1.应收,2.单证影像）',
+  `company_code` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '险企code(多家险企逗号分隔), 空值时代表所有险企都适用',
+  `add_time` datetime DEFAULT NULL,
+  `modify_time` datetime DEFAULT NULL,
+  `sys_flag` tinyint(4) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=95 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
