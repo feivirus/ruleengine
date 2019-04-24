@@ -1,7 +1,5 @@
 package com.feivirus.ruleengine.enums;
 
-import com.ideacome.common.enums.BaseEnum;
-
 public enum SingleThirdPartyEnum implements BaseEnum{
     singleThird("singleThirdParty", "单三者"),
     noSingleThird("notSingleThirdParty", "非单三者"),

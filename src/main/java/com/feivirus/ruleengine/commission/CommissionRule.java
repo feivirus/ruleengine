@@ -5,9 +5,7 @@ import java.util.Map;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import com.feivirus.ruleengine.base.RuleMetaInfo;
-import com.ideacome.common.mongo.entity.MongoDBEntity;
 
 @Document(collection = "commission_rule_v2")
 public class CommissionRule implements MongoDBEntity<String>, Serializable {

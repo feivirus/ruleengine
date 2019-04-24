@@ -18,13 +18,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
-
 import com.alibaba.fastjson.JSONObject;
-import com.ideacome.common.enums.RuleStatusEnum;
-import com.ideacome.common.mongo.dao.GenericMongoDAO;
-import com.ideacome.common.rule.dto.LevelGroup;
-import com.ideacome.common.rule.enums.CommissionComputeTypeEnum;
-import com.ideacome.common.utils.AreaCodeUtils;
+
 
 public class CommissionRuleDAO extends GenericMongoDAO<CommissionRule, String> {
     private static final Logger LOGGER = LoggerFactory.getLogger(CommissionRuleDAO.class);

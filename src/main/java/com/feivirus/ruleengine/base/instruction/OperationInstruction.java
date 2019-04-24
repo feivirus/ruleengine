@@ -3,11 +3,9 @@ package com.feivirus.ruleengine.base.instruction;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-
 import com.feivirus.ruleengine.commission.RuleCondition;
 import com.feivirus.ruleengine.enums.ConditionCodeEnum;
-import com.ideacome.common.enums.RuleUnitCovertEnum;
-import com.ideacome.common.enums.RuleUnitEnum;
+
 
 /**
  * 特殊值转化

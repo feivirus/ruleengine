@@ -1,7 +1,5 @@
 package com.feivirus.ruleengine.enums;
 
-import com.ideacome.common.enums.InsuKindItem;
-
 public enum OrderKindItemEnum {
     //insuRiskTerms
     CAR_DAMAGE(1, InsuKindItem.CAR_DAMAGE, ConditionCodeEnum.CAR_DAMAGE),

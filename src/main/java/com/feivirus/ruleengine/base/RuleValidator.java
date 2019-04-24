@@ -21,7 +21,6 @@ import com.feivirus.ruleengine.enums.RelationEnum;
 import com.feivirus.ruleengine.enums.instruction.OperatorEnum;
 import com.feivirus.ruleengine.rule.dto.SysAreaDTO;
 import com.feivirus.ruleengine.rule.dto.ValueRange;
-import com.ideacome.common.enums.BusinessType;
 
 /**
  * 规则冲突校验
