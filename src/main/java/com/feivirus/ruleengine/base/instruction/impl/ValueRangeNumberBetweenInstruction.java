@@ -4,11 +4,11 @@ import java.util.List;
 
 import org.apache.commons.collections.CollectionUtils;
 
+import com.feivirus.common.rule.util.NumberUtil;
 import com.feivirus.ruleengine.base.instruction.Operand;
 import com.feivirus.ruleengine.base.instruction.RelationalInstruction;
 import com.feivirus.ruleengine.base.instruction.operand.ValueRangeOperand;
 import com.feivirus.ruleengine.enums.instruction.OperatorEnum;
-import com.ideacome.common.rule.util.NumberUtil;
 
 /**
  * 

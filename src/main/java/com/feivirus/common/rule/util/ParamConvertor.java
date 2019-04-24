@@ -1,4 +1,4 @@
-package com.ideacome.common.rule.util;
+package com.feivirus.common.rule.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;

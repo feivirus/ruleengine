@@ -1,8 +1,8 @@
 package com.feivirus.ruleengine.base.instruction.impl;
 
+import com.feivirus.common.rule.util.NumberUtil;
 import com.feivirus.ruleengine.base.instruction.RelationalInstruction;
 import com.feivirus.ruleengine.enums.instruction.OperatorEnum;
-import com.ideacome.common.rule.util.NumberUtil;
 
 /**
  * 
